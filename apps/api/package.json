@@ -1,0 +1,24 @@
+{
+  "name": "@suma/api",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@suma/types": "workspace:*",
+    "@hono/node-server": "^1",
+    "@types/pg": "^8",
+    "better-auth": "^1.6.11",
+    "hono": "^4",
+    "pg": "^8"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "tsx": "^4",
+    "typescript": "^5.7"
+  }
+}
